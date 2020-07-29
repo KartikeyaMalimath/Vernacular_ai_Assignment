@@ -33,7 +33,8 @@ The docker image runs on port 8000
 
 
 ## 1. API - 1 Sample input
-* ```
+* 
+```
 {
   "invalid_trigger": "invalid_ids_stated",
   "key": "ids_stated",
@@ -62,4 +63,4 @@ The docker image runs on port 8000
     }
   ]
 }
- ```
+```
