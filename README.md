@@ -22,11 +22,11 @@ The docker image runs on port 8000
 
 1. **POST API to validate a slot with a finite set of values**
 
-* ``` [GitHub](http://localhost:8080/vernacular/fvalues) ```
+* ``` http://localhost:8080/vernacular/fvalues ```
 
 2. **POST API to validate a slot with a numeric value extracted and constraints on the value extracted**
 
-* ``` [GitHub](http://localhost:8080/vernacular/nconstraints) ```
+* ``` http://localhost:8080/vernacular/nconstraints ```
 
 
 ### Built with :heart: by Kartikeya P. Malimath
