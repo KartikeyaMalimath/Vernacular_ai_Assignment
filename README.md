@@ -29,11 +29,8 @@ The docker image runs on port 8000
 * ``` http://localhost:8080/vernacular/nconstraints ```
 
 
-### Built with :heart: by Kartikeya P. Malimath
-
-
-## 1. API - 1 Sample input
-* 
+### 1. API - 1 
+* Sample Request
 ```
 {
   "invalid_trigger": "invalid_ids_stated",
@@ -64,3 +61,55 @@ The docker image runs on port 8000
   ]
 }
 ```
+
+* Sample Response
+```
+{
+    "filled": true,
+    "partially_filled": false,
+    "trigger": '',
+    "parameters": {
+        "ids_stated": ["COLLEGE"]
+    }
+}
+```
+
+### 2. API - 2
+
+* Sample Request
+```
+{
+  "invalid_trigger": "invalid_age_stated",
+  "key": "age_stated",
+  "name": "age",
+  "reuse": true,
+  "pick_first": true,
+  "type": [
+    "number"
+  ],
+  "validation_parser": "numeric_values_entity",
+  "constraint": "x>=18 and x<=30",
+  "var_name": "x",
+  "values": [
+    {
+      "entity_type": "number",
+      "value": 23
+    }
+  ]
+}
+```
+
+* Sample Response
+
+```
+{
+    "filled": true,
+    "partially_filled": false,
+    "trigger": '',
+    "parameters": {
+        "age_stated": 23
+    }
+}
+```
+
+## Built with :heart: by Kartikeya P. Malimath
