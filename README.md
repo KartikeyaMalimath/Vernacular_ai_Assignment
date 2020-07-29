@@ -30,3 +30,36 @@ The docker image runs on port 8000
 
 
 ### Built with :heart: by Kartikeya P. Malimath
+
+
+## 1. API - 1 Sample input
+* ```
+{
+  "invalid_trigger": "invalid_ids_stated",
+  "key": "ids_stated",
+  "name": "govt_id",
+  "reuse": true,
+  "support_multiple": true,
+  "pick_first": false,
+  "supported_values": [
+    "pan",
+    "aadhaar",
+    "college",
+    "corporate",
+    "dl",
+    "voter",
+    "passport",
+    "local"
+  ],
+  "type": [
+    "id"
+  ],
+  "validation_parser": "finite_values_entity",
+  "values": [
+    {
+      "entity_type": "id",
+      "value": "college"
+    }
+  ]
+}
+ ```
