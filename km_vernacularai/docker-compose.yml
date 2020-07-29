@@ -1,0 +1,7 @@
+version: '3'
+
+services: 
+    km_vernacularai:
+        build: .
+        ports: 
+            - 8000:8000
