@@ -12,9 +12,9 @@ Size of the docker image is approximately **982 MB**
 
 1. Download the project file and cd into the project directory **km_vernaculalrai**
 2. Run the below commands
-    ``` docker-compose build ```
+    * ``` docker-compose build ```
 3. Post building of docker-image run the below command to run the image
-    ``` docker-compose up ```
+    * ``` docker-compose up ```
 
 The docker image runs on port 8000
 
